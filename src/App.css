@@ -81,11 +81,11 @@ text-align: center;
 color: #FFFFFF;
 }
 
+
 .welcome-button{
-   margin-top: 103px;
+  margin-top: 103px;
 width: 377px;
 height: 82px;
-
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -94,29 +94,26 @@ background: rgba(13, 97, 92, 0.5);
 border-radius: 91px;
 }
 
-.welcome-button a{
-   
-width: 343px;
-height: 58px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
 
-background: #0ADADA;
-border-radius: 91px;
+.welcome-button a{   
+    width: 343px;
+    height: 58px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #0ADADA;
+    border-radius: 91px;
 }
 
-.welcome-button p{
-   
-color: #000F16;
 
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 32px;
-text-align: center;
-
+.welcome-button p{   
+    color: #000F16;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
 }
 
 .pledge-page{
@@ -129,34 +126,31 @@ text-align: center;
 
 .pledge-page h2{
     
-width: 654px;
-height: 42px;
-
-
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
-/* identical to box height */
-margin-bottom: 67px;
-text-align: center;
-
-color: #0ADA76;
+    width: 654px;
+    height: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    /* identical to box height */
+    margin-bottom: 67px;
+    text-align: center;
+    color: #0ADA76;
 
 }
 
 .pledge-text{
    
-width: 780px;
-height: 225px;
+    width: 780px;
+    height: 225px;
 
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 38px;
-text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 
@@ -173,22 +167,20 @@ justify-content: center;
 
 }
 
-.pledge-form div{
-    width: 100%;
-}
+
 .pledge-form p{
    
-width: 189px;
-height: 21px;
+    width: 189px;
+    height: 21px;
 
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
 
 
-color: #26BDE2;
+    color: #26BDE2;
 
 }
 .pledge-form input{
@@ -204,13 +196,22 @@ border-radius: 49px;
 .form-name{
     display: flex ;
     flex-direction: row;
+    width: 100%;
 }
 
-.form-name div{
+.form-email{
+    width: 100%;
+}
+
+.form-country{
+    width: 100%;
+}
+
+/* .form-name div{
     width: 45%;
     height: 100%;
     
-}
+} */
 .form-name div:nth-child(2) {
   margin-left: 36px;
 }

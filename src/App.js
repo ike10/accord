@@ -51,7 +51,7 @@ export const App  = () => {
        {/* pledge page */}
        <div className="pledge-page">
            <h2 className="pledge-header">
-               JOIN THE A-LUST BY TAKING THE PLEDGE
+               JOIN THE A-LIST BY TAKING THE PLEDGE
            </h2>
            <p className="pledge-text">
                 "WE THE PEOPLE OF THE PLANET... <br/>
@@ -61,7 +61,10 @@ export const App  = () => {
                  WE SUPPORT BRANDS THAT TAKE MEASURABLE ACTION FOR PEOPLE & PROSPERITY."
 
            </p>
-           <form className="pledge-form" method="POST">
+           <div className="pledge-form"
+            // method="POST"
+            
+            >
                <div className="form-name">
                     <div className="first-name">
                         <p>First Name</p>
@@ -81,7 +84,7 @@ export const App  = () => {
                    <input placeholder="123@gmail.com" type="email"/>
                </div>
                <div className="welcome-button">
-                    <a href="/" className="form-button">
+                    <a href="/">
                         <p>PLEDGE</p>
                     </a>
                </div>
@@ -91,7 +94,7 @@ export const App  = () => {
 You agree to receive occasional updates about The ACCORD’s campaign and events.
 You can unsubscribe at any time.</p>
                </div>
-           </form>
+           </div>
        </div>
 
        {/* end of  pledge page */}

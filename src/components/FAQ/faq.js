@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './faq.css'
 import CloseIcon from '../../../src/images/faq/Close.svg'
 import OpenIcon from '../../../src/images/faq/open.svg'
-export const FaqComponent  = () => {
+export const FaqComponent  = ({FaqHeader}) => {
 
     const [showText, setShowText] = useState(false)
 
@@ -27,7 +27,7 @@ You can unsubscribe at any time.</p>
     <div className="faq-component">
   
        <div className="footer-component-header">
-           <h1 className="footer-component-header-text">Lorem Ipsum</h1>
+           <h1 className="footer-component-header-text">{FaqHeader}</h1>
            <div 
             onClick={()=>{
                 setShowText(!showText)

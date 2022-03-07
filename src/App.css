@@ -23,8 +23,12 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
+   visibility: visible;
 }
-
+.mobile-header-container{
+    display: none;
+    visibility: hidden;
+}
 .logo-container{
     width: 50%;
     padding-left: 206px;
@@ -213,7 +217,9 @@ border-radius: 49px;
     
 } */
 .form-name div:nth-child(2) {
-  margin-left: 36px;
+  margin-right: 0px;
+  margin-left: 17%;
+  
 }
 
 .form-terms p{
@@ -254,6 +260,42 @@ align-items: center;
 
 background: #0ADADA;
 border-radius: 91px;
+}
+
+.pledge-button{
+  margin-top: 50px;
+width: 377px;
+padding: 10px;
+height: 62px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background: rgba(13, 97, 92, 0.5);
+border-radius: 91px;
+}
+
+
+.pledge-button a{  
+    margin: 2px; 
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #0ADADA;
+    border-radius: 91px;
+}
+
+
+.pledge-button p{   
+    color: #000F16;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
 }
 
 .faq-page{
@@ -335,6 +377,7 @@ display: flex;
 }
 
 .contact-section-1{
+    padding: 5px;
 width: 375px;
 height: 173px;
 background: radial-gradient(110.36% 110.36% at 50.12% -15.9%, #033D41 0%, #000F16 100%);
@@ -344,11 +387,12 @@ margin-top: 180px;
 }
 
 .contact-section-2{
-
+padding: 5px;
 margin-top: 96px;
 margin-left: -96px;
-
-
+/* background-image: url("/public/planetBImage.svg");
+background-size: 100% 100%;
+background-repeat: no-repeat; */
 width: 345px;
 height: 208px;
 
@@ -358,7 +402,7 @@ border-radius: 10px;
 }
 
 .contact-section-3{
-
+padding: 5px;
 margin-top: 180px;
 margin-left: -96px;
 
@@ -387,6 +431,424 @@ border-radius: 10px;
      margin:0 auto;
      max-width: 100vw;
   }
+  .header-container{
+    width: 100%;
+    height: 141px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+   visibility: hidden;
+  
+}
+.mobile-header-container{
+     padding-top: 20px;
+    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.mobile-logo-container{
+    width: 50%;
+    padding-left: 20px;
+}
+.mobile-navigation-container{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mobile-navigation-container img{
+    width: 2rem;
+    height: 2rem;
+}
+.sidebar{
+     display: flex;
+                    position: fixed;
+                    width:80vw;
+                    height:100vh;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    background-color: #000F16 ;
+                    /* background: linear-gradient(180deg, #000F16 0%, rgba(8, 136, 121, 0.55) 100%); */
+                    color:#ffffff;
+}
+
+.sidebar-panel-navigation a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.sidebar-panel-navigation li{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+.welcome-section{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ height: auto;
+ padding: 10px;
+ padding-left: 0;
+}
+
+.welcome-section h2{
+   
+width: 90%;
+height: auto;
+
+font-style: normal;
+font-weight: 500;
+font-size: 46px;
+line-height: 42px;
+text-align: start;
+
+color: #FFFFFF;
+}
+
+.welcome-button{
+  margin-top: 53px;
+width: 277px;
+height: 82px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background: rgba(13, 97, 92, 0.5);
+border-radius: 91px;
+}
+
+
+.welcome-button a{   
+    width: 243px;
+    height: 58px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #0ADADA;
+    border-radius: 91px;
+}
+
+
+.welcome-button p{   
+    color: #000F16;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+}
+/* end of welcome  page */
+
+/* beginning of form section mobile */
+
+.pledge-page{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pledge-page h2{
+    
+    width: 100%;
+    height: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    /* identical to box height */
+    margin-bottom: 67px;
+    text-align: center;
+    color: #0ADA76;
+
+}
+
+.pledge-text{
+   
+    width: 90%;
+    height: auto;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.pledge-form{
+    display: flex;
+    margin-top: 64px;
+    width: 100%;
+height: 470px;
+
+align-items: center;
+justify-content: center;
+
+    flex-direction: column;
+
+}
+
+
+.pledge-form p{
+   
+    width: 100px;
+    height: 21px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #26BDE2;
+
+}
+.pledge-form input{
+    width: 90%;
+height: 50px;
+padding-left: 20px;
+
+
+background: #FFFFFF;
+border-radius: 49px;
+}
+
+.form-name{
+    display: flex ;
+    flex-direction: row;
+    width: 90%;
+}
+
+.form-email{
+    width: 100%;
+}
+
+.form-country{
+    width: 100%;
+}
+
+/* .form-name div{
+    width: 45%;
+    height: 100%;
+    
+} */
+.form-name div:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 17%;
+  
+}
+
+.form-terms p{
+  margin: 10px; 
+  margin-top: 20px;
+width: 90%;
+height: 82px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+}
+
+.form-button-container{
+width: 377px;
+height: 82px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-style: normal;
+
+background: rgba(13, 97, 92, 0.5);
+border-radius: 91px;
+}
+
+.form-button-container a{
+    width: 343px;
+height: 58px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+background: #0ADADA;
+border-radius: 91px;
+}
+
+.pledge-button{
+  margin-top: 50px;
+width: 277px;
+padding: 10px;
+height: 62px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background: rgba(13, 97, 92, 0.5);
+border-radius: 91px;
+}
+
+
+.pledge-button a{  
+    margin: 2px; 
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #0ADADA;
+    border-radius: 91px;
+}
+
+
+.pledge-button p{   
+    color: #000F16;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.faq-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.faq-header{
+    
+
+height: auto;
+
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 60%;
+/* identical to box height, or 29px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+.footer-page{
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #000B0F;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer-page h2{
+    width: 123px;
+height: 42px;
+
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 42px;
+/* identical to box height */
+
+
+color: #023439;
+}
+
+.footer-page div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-page p{
+   width: 100%;
+    color: #000B0F;
+}
+
+.contact-page{
+    width: 100%;
+    height: 500px;
+    padding-left: 10px;
+display: flex;
+    flex-direction: row;
+   
+  
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.contact-section-1{
+    padding: 5px;
+width: 275px;
+height: 73px;
+background: radial-gradient(110.36% 110.36% at 50.12% -15.9%, #033D41 0%, #000F16 100%);
+box-shadow: 0px -58px 60px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+margin-top: 180px;
+}
+
+.contact-section-2{
+padding: 5px;
+margin-top: 96px;
+margin-left: -206px;
+/* background-image: url("/public/planetBImage.svg");
+background-size: 100% 100%;
+background-repeat: no-repeat; */
+width: 245px;
+height: 108px;
+
+
+background: rgba(3, 65, 39, 0.63);
+border-radius: 10px;
+}
+
+.contact-section-3{
+padding: 5px;
+margin-top: 230px;
+margin-left: -146px;
+
+
+width: 185px;
+height: 124px;
+left: 838px;
+top: 2749px;
+
+background: rgba(8, 136, 121, 0.55);
+border-radius: 10px;
+}
+
 }
 
 

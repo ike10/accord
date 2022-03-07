@@ -1,5 +1,5 @@
 import React from "react";
-
+import {useState} from 'react';
 import './App.css'
 
 
@@ -11,33 +11,80 @@ import './App.css'
 // import TypewriterComponent from 'typewriter-effect'
 // import Link from 'next/link'
 import 'animate.css/animate.min.css'
-// import {AnimationOnScroll} from 'react-animation-on-scroll' 
+import {AnimationOnScroll} from 'react-animation-on-scroll' 
 import FaqComponent from "./components/FAQ/faq";
-
-
+import Menu from '../src/images/Menu Rounded.svg'
+import AccordLogo from '../src/images/accordLogo.svg'
 // import {useMediaQuery} from "react-responsive";
 // import { mediaQueries } from "./responsive";
 export const App  = () => {
 
+const [menu, setMenu] = useState(false)
 
+ const renderMenu = () => {
+        if (menu) {
+            return (
+                <AnimationOnScroll animateIn="animate__slideInLeft" 
+                className="sidebar">
+                    <div className="sidebar-backdrop"></div>
+
+                    <div name="slide-bar">
+
+                        <div className="sidebar-panel-container">
+                            {/* <div className="top-0 right-0 text-2xl text-white" onClick={()=>{
+                                setMenu(!menu)
+                            }}><p>Close</p></div> */}
+                            <ul className="sidebar-panel-navigation" style={{ listStyle: "none" }}>
+
+                                <li><a href="#welcome-page" className="lope">Home</a></li>
+                                <li><a href="#about-page" className="lope">Contact</a></li>
+                                <li><a href="#tokenomics-page" className="lope">Faq</a></li>
+                                <li><a href="#roadmap" className="lope">Join Us</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </AnimationOnScroll>
+            )
+        } else {
+            return null
+        }
+    }
 
   
     return (
     <div className="main-body">
     {/* welcome page */}
+    {
+        renderMenu()
+    }
        <div className="welcome-page">
+
            <nav className="header-container">
                <div className="logo-container">
-                   {/* <img src='/'/> */}
-                   <p>accord</p>
+                   <img alt="accord" src={AccordLogo}/>
+                   {/* <p>accord</p> */}
                </div>
                <div className="navigation-container">
                    <a href='#contact'><p>Contact</p></a>
                    <a href='#faq'><p>FAQ</p></a>
                </div>
            </nav>
+           <nav className="mobile-header-container">
+<div className="mobile-logo-container">
+                   <img alt="accord" src={AccordLogo}/>
+                   {/* <p>accord</p> */}
+               </div>
+               <div className="mobile-navigation-container">
+                 <img src={Menu} alt="menu" 
+                 onClick={()=>{
+                     setMenu(!menu)
+                 }}/>
+               </div>
+           </nav>
            <div className="welcome-section">
-               <h2 className="welcome-header">We are a growing list of perople and brands, driving action for peace and prosperity, for people and planet</h2>
+               <h2 className="welcome-header">We are a growing list of people and brands, 
+driving action for peace and prosperity, for people and planet.</h2>
                <div className="welcome-button">
                <a href="/">
                     <p>JOIN THE ACCORD</p>
@@ -83,7 +130,7 @@ export const App  = () => {
                    <p>Country</p>
                    <input placeholder="123@gmail.com" type="email"/>
                </div>
-               <div className="welcome-button">
+               <div className="pledge-button">
                     <a href="/">
                         <p>PLEDGE</p>
                     </a>
@@ -104,9 +151,9 @@ You can unsubscribe at any time.</p>
         <div className="faq-page">
             <h2 className="faq-header">Have Some Questions?</h2>
             <div className="faq-section">
-                <FaqComponent/>
-                <FaqComponent/>
-                <FaqComponent/>
+                <FaqComponent FaqHeader="How can I get involved"/>
+                <FaqComponent FaqHeader="What does the pledge stand for?"/>
+                <FaqComponent FaqHeader="How is my information handled"/>
             </div>
         </div>
 

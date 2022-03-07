@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.61ff7599.css",
-    "main.js": "/static/js/main.47270c1a.js",
+    "main.css": "/static/css/main.604927fb.css",
+    "main.js": "/static/js/main.0bcb5a7e.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
+    "static/media/accordLogo.svg": "/static/media/accordLogo.c0126528aa7fdaa725c2016c21f13d98.svg",
     "static/media/open.svg": "/static/media/open.4247417911a61aee3af103ca9eb33578.svg",
     "static/media/Close.svg": "/static/media/Close.f62116527c022c8b770450b6f195f462.svg",
+    "static/media/Menu Rounded.svg": "/static/media/Menu Rounded.23f5e9d80b003f77c66c63baad845a12.svg",
     "index.html": "/index.html",
-    "main.61ff7599.css.map": "/static/css/main.61ff7599.css.map",
-    "main.47270c1a.js.map": "/static/js/main.47270c1a.js.map",
+    "main.604927fb.css.map": "/static/css/main.604927fb.css.map",
+    "main.0bcb5a7e.js.map": "/static/js/main.0bcb5a7e.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61ff7599.css",
-    "static/js/main.47270c1a.js"
+    "static/css/main.604927fb.css",
+    "static/js/main.0bcb5a7e.js"
   ]
 }

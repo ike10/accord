@@ -35,3 +35,44 @@ height: 40px;
 .faq-component-text{
     width: 937px;
 }
+
+@media (min-width:240px) and (max-width: 900px) {
+    .faq-component{
+    width: 90%;
+display: flex;
+flex-direction: column;
+border-bottom: 2px solid #ffffff;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.footer-component-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-component-header-text{
+    width: 95%;
+    font-size: 24px;
+}
+.footer-toggle-button{
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+}
+
+.footer-toggle-button img{
+
+width: 40px;
+height: 40px;
+
+}
+
+.faq-component-text{
+    width: 95%;
+}
+}
